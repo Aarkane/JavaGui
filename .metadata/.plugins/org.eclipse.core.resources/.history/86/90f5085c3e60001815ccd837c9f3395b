@@ -1,6 +1,5 @@
 package QuizPackage;
 
-import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -26,11 +25,5 @@ public class Quiz {
 		
 		panel.add(title);
 		QuizGUI.add(panel);
-		
-		ArrayList<String> VQ = new ArrayList<String>();
-		VQ.add("1");
-		VQ.add("2");
-		VQ.add("3");
-		VQ.add("4");
 	}
 }
