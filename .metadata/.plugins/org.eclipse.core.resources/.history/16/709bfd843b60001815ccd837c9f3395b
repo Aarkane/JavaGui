@@ -1,0 +1,17 @@
+package QuizPackage;
+
+import javax.swing.JFrame;
+
+public class Quiz {
+	public static void main(String[] args) {
+		new Quiz();
+	}
+	public Quiz(){
+		JFrame QuizGUI = new JFrame();
+		QuizGUI.setTitle("Quiz");
+		QuizGUI.setSize(400, 600);
+		QuizGUI.setResizable(false);
+		QuizGUI.setLocationRelativeTo(null);
+		QuizGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
