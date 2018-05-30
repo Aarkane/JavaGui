@@ -1,0 +1,94 @@
+package project;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.text.StyleConstants;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+  
+
+
+  
+public class projectwindow extends JFrame {
+ 
+
+JMenuBar menu;
+JMenu newFile;
+JMenu newAbout;
+JMenu newOptions;
+JMenuItem newFileOpen;
+JMenuItem newFileSave;
+JMenuItem newFileExit;
+JMenuItem newOptionsFontColor1;
+JMenuItem newOptionsFontColor2;
+JMenuItem newOptionsFontColor3;
+JMenuItem newOptionsAlignment;
+JMenuItem newOptionsTextSize1;
+JMenuItem newOptionsTextSize2;
+JMenuItem newOptionsTextSize3;
+JPanel text;
+JPanel base;
+JLabel file;
+JTextPane body;
+
+ 
+public projectwindow(){
+menu = new JMenuBar();
+setJMenuBar(menu);
+newFile = new JMenu("File");
+newOptions = new JMenu("Options");
+newFileOpen = new JMenuItem("Open");
+newFileSave = new JMenuItem("Save");
+newFileExit = new JMenuItem("Exit");
+newOptionsFontColor1 = new JMenuItem("Font Color1");
+newOptionsFontColor2 = new JMenuItem("Font Color2");
+newOptionsFontColor3 = new JMenuItem("Font Color3");
+newOptionsAlignment = new JMenuItem("Alignment");
+newOptionsTextSize1 = new JMenuItem("Text Size1");
+newOptionsTextSize2 = new JMenuItem("Text Size2");
+newOptionsTextSize3 = new JMenuItem("Text Size3");
+
+newFile.add(newFileOpen);
+newFile.add(newFileSave);
+newFile.add(newFileExit);
+newOptions.add(newOptionsFontColor1);
+newOptions.add(newOptionsFontColor2);
+newOptions.add(newOptionsFontColor3);
+newOptions.add(newOptionsAlignment);
+newOptions.add(newOptionsTextSize1);
+newOptions.add(newOptionsTextSize2);
+newOptions.add(newOptionsTextSize3);
+ 
+menu.add(newFile);
+menu.add(newOptions);
+ 
+
+base = new JPanel();
+text = new JPanel();
+
+body = new JTextPane();
+text.add(body);
+getContentPane().add(base, "Center");
+base.add(text);
+
+setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+setResizable(false);
+setSize(800, 600);
+setVisible(true);
+setLineWrap(true);
+}
+
+private void setLineWrap(boolean b) {
+	// TODO Auto-generated method stub
+	
+}
+
+public static void main(String args []){
+new projectwindow();
+}
+
+
+}
